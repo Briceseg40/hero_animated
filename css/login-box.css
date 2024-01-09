@@ -1,0 +1,138 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/R.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+form h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px;
+    border-bottom: 2px solid white;
+}
+
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+.login-box {  
+    background-color: transparent;
+    border: 2px solid white;
+    width: 380px;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    backdrop-filter: blur(50px);
+}
+
+.input-box input {
+    width: 90%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    padding: 0 35px 0px 5px;
+    overflow: hidden;
+
+}
+.input-box .icon {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+}
+
+.remember-forgot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.remember-forgot .just_remember {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.remember-forgot .just_remember label {
+    color: white;
+}
+
+.remember-forgot .just_remember input {
+    margin: 0 5px 0 0;
+    transition: .5s;
+}
+
+.remember-forgot .just_remember a {
+    color: white;
+    
+}
+
+.remember-forgot .just_remember a:hover {
+    color: blue;
+    
+    
+}
+
+.remember-forgot button {
+    margin-top: 30px;
+    width: 80%;
+    border: 2px solid white;
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding: 1px 0px 1px 0;
+}
+
+.remember-forgot button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1.2em;
+   
+   color: white;
+   transition: .5s;
+}
+
